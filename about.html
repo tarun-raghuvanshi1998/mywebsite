@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Tarun Raghuvanshi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+            background: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXVkbzc4bmZ0bjBpOWpmam9paXE0eDI0bHd0aGs5eTAyemdsZjlmaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Eqz8ZFUScPHH2/giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        nav ul {
+            list-style: none;
+            background-color: #333;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 15px 20px;
+            display: block;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+        }
+
+        header h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section h2, section h3, section p, section ul {
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .github-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #333;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .github-button:hover {
+            background-color: #575757;
+        }
+
+        .github-button img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('resume') }}">Resume</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            <li><a href="https://github.com/tarun-raghuvanshi1998" class="github-button" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+                GitHub
+            </a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>About Me</h1>
+        <p>Learn more about me and my background.</p>
+    </header>
+    <section>
+        <h2>About Me</h2>
+        <p>Hi, I'm Tarun Raghuvanshi, a passionate Data Analyst. I have been working at 3G Infotech Services since August 2022. I enjoy transforming raw data into meaningful insights that drive business decisions.</p>
+        <h3>Skills</h3>
+        <ul>
+            <li>Data Cleaning and Preprocessing</li>
+            <li>Data Visualization with tools like Tableau and Power BI</li>
+            <li>Statistical Analysis</li>
+            <li>Machine Learning</li>
+            <li>Programming in Python and R</li>
+            <li>Database Management with SQL</li>
+        </ul>
+        <h3>Certification</h3>
+        <p>I hold a degree in Data Science and various certifications in data analysis and machine learning.</p>
+        <h3>Hobbies</h3>
+        <p>I enjoy working on personal data projects, reading about data science, and exploring new places.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Tarun Raghuvanshi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
